@@ -310,7 +310,7 @@ public class Search_Customer extends javax.swing.JInternalFrame {
             // TODO add your handling code here:
             String id = CustomerID.getText();
              Class.forName("com.mysql.jdbc.Driver");
-             con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+             con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
              pre=con.prepareStatement("select * from airlinedb.customer where idcustomer=?");
              pre.setString(1,id);
              ResultSet rs = pre.executeQuery();

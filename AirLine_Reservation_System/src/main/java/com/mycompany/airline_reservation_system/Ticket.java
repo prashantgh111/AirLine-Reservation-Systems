@@ -41,7 +41,7 @@ public class Ticket extends javax.swing.JInternalFrame {
      public void autoId() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             Statement s = con.createStatement();
             ResultSet rs = s.executeQuery("Select MAX(id) from ticket");
             rs.next();
@@ -524,7 +524,7 @@ public class Ticket extends javax.swing.JInternalFrame {
             
             Class.forName("com.mysql.jdbc.Driver");
             
-            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             pre = con.prepareStatement("SELECT * from flight where departure=? and arrival=?");
             pre.setString(1,dept );
             pre.setString(2, Arrival);
@@ -573,7 +573,7 @@ public class Ticket extends javax.swing.JInternalFrame {
             // TODO add your handling code here:
              String id = CustomerID.getText();
              Class.forName("com.mysql.jdbc.Driver");
-             con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+             con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
              pre=con.prepareStatement("select * from airlinedb.customer where idcustomer=?");
              pre.setString(1,id);
              ResultSet rs = pre.executeQuery();
@@ -611,7 +611,7 @@ public class Ticket extends javax.swing.JInternalFrame {
             
             
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             pre = con.prepareStatement("insert into ticket(id,flightid,custid,price,date,seats)values(?,?,?,?,?,?)");
             pre.setString(1, id);
             pre.setString(2, FlightID);

@@ -38,7 +38,7 @@ public class Report extends javax.swing.JInternalFrame {
             
             Class.forName("com.mysql.jdbc.Driver");
             
-            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             pre = con.prepareStatement("SELECT * from ticket");
             ResultSet rs = pre.executeQuery();
             

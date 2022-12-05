@@ -471,7 +471,7 @@
                                       <Component id="price" max="32767" attributes="0"/>
                                       <Component id="departTime" max="32767" attributes="0"/>
                                       <Component id="seats" max="32767" attributes="0"/>
-                                      <Component id="date" alignment="0" pref="134" max="32767" attributes="0"/>
+                                      <Component id="date" alignment="0" pref="135" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>

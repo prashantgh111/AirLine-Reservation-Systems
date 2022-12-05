@@ -146,7 +146,7 @@ public class Login extends javax.swing.JFrame {
                 // TODO add your handling code here:
 
                 Class.forName("com.mysql.jdbc.Driver");
-                con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+                con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
                 pre=con.prepareStatement("Select  * from user where UserName=? and Password=?");
                 pre.setString(1,user);
                 pre.setString(2,Ps);

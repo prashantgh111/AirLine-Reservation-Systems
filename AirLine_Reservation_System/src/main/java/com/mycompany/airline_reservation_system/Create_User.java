@@ -33,7 +33,7 @@ public class Create_User extends javax.swing.JInternalFrame {
       public void autoId() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             Statement s = con.createStatement();
             ResultSet rs = s.executeQuery("Select MAX(UserID) from user");
             rs.next();
@@ -225,7 +225,7 @@ public class Create_User extends javax.swing.JInternalFrame {
             String userName = UserName.getText();
             String password = Password.getText();
             
-            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             pre = con.prepareStatement("insert into user(UserID,Password,Name,LastName,UserName)values(?,?,?,?,?)");
             pre.setString(1,id);
             pre.setString(2,password);

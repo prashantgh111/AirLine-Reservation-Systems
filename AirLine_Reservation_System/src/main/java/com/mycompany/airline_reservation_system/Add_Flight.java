@@ -35,7 +35,7 @@ public class Add_Flight extends javax.swing.JInternalFrame {
      public void autoId() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             Statement s = con.createStatement();
             ResultSet rs = s.executeQuery("Select MAX(flightID) from flight");
             rs.next();
@@ -356,7 +356,7 @@ public class Add_Flight extends javax.swing.JInternalFrame {
             
             
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Yashwin@2021");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/airlinedb","root","Prashant@111");
             pre = con.prepareStatement("insert into flight(flightID,airlinename,bcs,ecs,departure,arrival,departtime,arrivaltime,price,date)values(?,?,?,?,?,?,?,?,?,?)");
             pre.setString(1, id);
             pre.setString(2, Airlinename);
